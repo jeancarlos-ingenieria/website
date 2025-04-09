@@ -1,0 +1,30 @@
+---
+const NAV_LINKS=[
+  {
+    href: "/projects",
+    text: "Projects"
+  },
+  {
+    href:"/posts",
+    text:"Posts"
+  },
+  {
+    href: "/contact",
+    text:"Contact"
+  },
+   {
+    href: "/about",
+    text:"About"
+  },
+  
+]
+---
+<header class="bg-zinc-950 flex flex-col justify-center">
+  <nav>
+    <ul class="flex justify-between items-center">
+      {
+        NAV_LINKS.map(({href, text})=><a href={href}>{text}</a>)
+      }
+    </ul>
+  </nav>
+</header>
